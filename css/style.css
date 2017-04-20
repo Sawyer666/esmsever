@@ -37,8 +37,8 @@ html, body {
     line-height: 40px;
     height: 40px;
     padding-top: 0;
-    font-size: 12px;
-    color: #000;
+    font-size: 14px;
+    color: #273d4c;
     font-weight: bold;
 }
 
@@ -210,21 +210,26 @@ font-size: 16px;
 
 @media (min-width: 1000px) {
 
-    .navbar-brand,
-    .navbar-nav > li > a {
+    .navbar-brand,.navbar-default .navbar-nav>li>a  {
         line-height: 70px;
         height: 70px;
         padding-top: 0;
-        font-size: 12px;
-        color: #000;
+        font-size: 14px;
+        color: #273d4c;
         font-weight: bold;
     }
 
 }
 
 @media (min-width: 1200px) {
-    .navbar-nav li a {
-        font-size: 12px;
+
+    .navbar-brand,.navbar-default .navbar-nav>li>a  {
+        line-height: 80px;
+        height: 80px;
+        padding-top: 0;
+        font-size: 16px;
+        color: #273d4c;
+        font-weight: bold;
     }
 }
 
