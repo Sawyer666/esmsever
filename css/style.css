@@ -96,11 +96,28 @@ html, body {
 
 .blog-footer {
     padding: 40px 0;
-    color: #000;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #273d4c;
     border-top: 1px solid #e5e5e5;
-    font-size: 1em;
+font-size: 16px;
+}
+
+.blog-footer p{
+    line-height: 35px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.flex-caption {
+    width: 96%;
+    padding: 2%;
+    left: 0;
+    bottom: 0;
+    background-color: #273d4c;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    font-size: 14px;
+    line-height: 18px;
 }
 
 @media (max-width: 1000px) {
