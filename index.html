@@ -19,7 +19,7 @@
     improve your experience.</p>
 <![endif]-->
 <div class="main">
-
+<div class="container header_wrap">
     <header>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -72,6 +72,7 @@
             </div><!-- /.container-fluid -->
         </nav>
     </header>
+</div>
     <div class="inner"></div>
     <!--<section id="header"><a href="./index.html" class="navbar-brand"><img src="img/golova.jpg" alt="" width="250"></a>-->
     <!--<div class="col-sm-18 mainmenu_wrap col-lg-18">-->
@@ -198,7 +199,7 @@
 
                 </div>
                 <div class="col-md-5">
-                    <div id="carousel-generic" class="carousel slide">
+                    <div id="carousel-generic" class="carousel slide"  >
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
@@ -252,7 +253,9 @@
 <script src="js/jquery.flexslider.js"></script>
 
 <script>
-
+    $(function () {
+        $(".carousel").carousel({ interval: 2000 });
+    });
     $(document).ready(function () {
         $('.flexslider').flexslider({
             animation: "slide",
