@@ -46,7 +46,7 @@
                                     О КОМПАНИИ<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="/rukovodstvo.html">РУКОВОДСТВО</a></li>
-                                    <li><a href="#">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a></li>
+                                    <li><a href="/info.html">ПОЛЕЗНАЯ ИНФОРМАЦИЯ</a></li>
                                     <li><a href="#">ЛИЦЕНЗИИ И СЕРТИФИКАТЫ</a></li>
                                 </ul>
                             </li>
@@ -102,11 +102,11 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" id="content" style="display: none;">
             <div class="blog-header">
                 <h2 class="block-header"><strong class="grey">О компании</strong></h2>
             </div>
-            <div class="row">
+            <div class="row" >
                 <div class="col-md-7 blog-main">
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Деятельность ООО «ЭСМ Север» направлена на реализацию
                     проектов
@@ -177,7 +177,7 @@
         Copyright 2017. ООО "ЭСМ Север"
     </p>
 
-    <p id="back-top">
+    <p id="back-top" style="display: none;">
         <a href="#top">
             <span id="top-span" class="glyphicon glyphicon-menu-up"></span>
         </a>
@@ -190,19 +190,25 @@
 <script src="js/jquery.flexslider.js"></script>
 
 <script>
-    $(function () {
-        $(".carousel").carousel({interval: 2000});
-    });
-    $(document).ready(function () {
+    (function () {
         $('.flexslider').flexslider({
             animation: "slide",
             directionNav: false
         });
+        $('#content').fadeIn("slow");
+    }());
+
+    $(function () {
+        $(".carousel").carousel({interval: 2000});
+    });
+    $(document).ready(function () {
+
         $(function () {
-            $("#back-top").hide();
+
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 100) {
                     $("#back-top").fadeIn();
+
                 } else {
                     $("#back-top").fadeOut();
                 }
