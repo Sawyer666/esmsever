@@ -194,6 +194,10 @@ html, body {
     margin-bottom: 30px;
 }
 
+.separator{
+    border-top: 1px solid #e1e1e1;
+}
+
 @media screen and (min-width: 769px) and (max-width: 1000px) {
 
     .inner {
@@ -338,6 +342,14 @@ html, body {
 
 @media (max-width: 768px) {
 
+    .wrap{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navbar-nav{
+        margin-top: 15px;
+    }
     .navbar-default .navbar-toggle {
         margin-top: 10px;
     }
