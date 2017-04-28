@@ -44,10 +44,12 @@ html, body {
     padding: 5px;
     width: auto;
 }
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: transparent;
 }
-.navbar-collapse{
+
+.navbar-collapse {
     border: none;
 }
 
@@ -194,8 +196,53 @@ html, body {
     margin-bottom: 30px;
 }
 
-.separator{
+.separator {
     border-top: 1px solid #e1e1e1;
+}
+
+@media (min-width: 1200px) {
+
+    .navbar-brand, .navbar-default .navbar-nav > li > a {
+        line-height: 80px;
+        height: 80px;
+        padding-top: 0;
+        font-size: 14px;
+        color: #273d4c;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1199px) {
+
+    .inner {
+        top: 70px;
+    }
+
+    .navbar-brand, .navbar-default .navbar-nav > li > a {
+        line-height: 70px;
+        height: 70px;
+        padding-top: 0;
+        font-size: 12px;
+        color: #273d4c;
+        font-weight: bold;
+    }
+
+
+    /*.dropdown:hover .dropdown-menu {*/
+    /*display: block;*/
+    /*opacity: 1;*/
+    /*}*/
+    .flexslider {
+        background: none;
+        border: none;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1001px) {
+
+
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1000px) {
@@ -288,68 +335,17 @@ html, body {
 
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1199px) {
-
-    .inner {
-        top: 70px;
-    }
-
-    .navbar-brand, .navbar-default .navbar-nav > li > a {
-        line-height: 70px;
-        height: 70px;
-        padding-top: 0;
-        font-size: 12px;
-        color: #273d4c;
-        font-weight: bold;
-    }
-
-    .dropdown .dropdown-menu {
-        display: block;
-        opacity: 0;
-        -webkit-transition: all 200ms ease-in;
-        -moz-transition: all 200ms ease-in;
-        -ms-transition: all 200ms ease-in;
-        -o-transition: all 200ms ease-in;
-        transition: all 200ms ease-in;
-    }
-
-    .dropdown:hover .dropdown-menu {
-        display: block;
-        opacity: 1;
-    }
-
-    .flexslider {
-        background: none;
-        border: none;
-        margin-bottom: 40px;
-    }
-}
-
-@media screen and (min-width: 1001px) and (max-width: 1199px){
-
-}
-@media (min-width: 1200px) {
-
-    .navbar-brand, .navbar-default .navbar-nav > li > a {
-        line-height: 80px;
-        height: 80px;
-        padding-top: 0;
-        font-size: 14px;
-        color: #273d4c;
-        font-weight: bold;
-    }
-}
-
 @media (max-width: 768px) {
 
-    .wrap{
+    .wrap {
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         margin-top: 15px;
     }
+
     .navbar-default .navbar-toggle {
         margin-top: 10px;
     }
